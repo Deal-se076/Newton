@@ -5,20 +5,20 @@ internal class Program
     {
         try
         {
-            Console.WriteLine("Введите целое число размера массивов : ");
+            Console.WriteLine("Enter the size of the array : ");
             int raz = Convert.ToInt32(Console.ReadLine());
             double[] X = new double[raz];
             double[] Y = new double[raz];
-            Console.WriteLine("Введите значение для интерполяции: ");
+            Console.WriteLine("Enter a value for interpolation: ");
             double x = Convert.ToDouble(Console.ReadLine());
 
 
             for (int i = 0; i < raz; i++)
             {
-                Console.WriteLine($"Введите X{i + 1}: ");
+                Console.WriteLine($"Enter X{i + 1}: ");
                 X[i] = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine($"Введите У{i + 1}: ");
+                Console.WriteLine($"Enter У{i + 1}: ");
                 Y[i] = Convert.ToDouble(Console.ReadLine());
             }
             double res =Math.Round(GetValue(X, Y, x),3);
@@ -27,7 +27,7 @@ internal class Program
         }
         catch 
         {
-            Console.WriteLine("Ошибка ввода");
+            Console.WriteLine("Eror input");
         }
 
     }
